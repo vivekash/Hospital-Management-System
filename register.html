@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="register.css">
+    <title>Blood Donation Registration</title>
+</head>
+<body>
+    <nav class="topnav">
+        <img class="left" height="100px" width="250px" src="hospitallogo.png" style="float:left; margin-right:100px;" >
+        <img class="left" height="100px" width="100px" src="https://t4.ftcdn.net/jpg/07/80/84/07/240_F_780840722_nRQWXafQ1nLARR7NKWzcgeAXKExYLHdK.jpg" style="float:right; margin-right: 50px;" >
+        <div class="navigation">
+    </nav>
+    <div class="container">
+        <h1>Blood Donation Registration Form</h1>
+        <form>
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" required>
+
+            <label for="blood-type">Blood Type:</label>
+            <select id="blood-type" name="blood-type" required>
+                <option value="" disabled selected>Select your blood type</option>
+                <option value="A+">A+</option>
+                <option value="A-">A-</option>
+                <option value="B+">B+</option>
+                <option value="B-">B-</option>
+                <option value="O+">O+</option>
+                <option value="O-">O-</option>
+                <option value="AB+">AB+</option>
+                <option value="AB-">AB-</option>
+            </select>
+
+            <label for="donation-frequency">How often do you donate blood?</label>
+            <input type="text" id="donation-frequency" name="donation-frequency">
+
+            <label for="comments">Additional Comments:</label>
+            <textarea id="comments" name="comments" rows="4"></textarea>
+
+            <!-- <button type="submit">Register</button> -->
+            <div>
+                <input onclick="alertdisplay()" type="submit" value="Submit">
+                <script>
+                function alertdisplay()
+                {
+                    window.alert("Patient Record Submitted Successfully");
+                    window.location.reload();
+                }
+              </script>
+              </div>
+        </form>
+    </div>
+    <div class="footer">
+        <div class="footer-content">
+            <div class="footer-section-about">
+                <h class="footer1">About Us<hr/></h>
+                <p class="footer2"> We are developing a healthcare system around you We think that everyone should have easy access to excellent healthcare. Our aim is to make the procedure as simple as possible for our patients and to offer treatment no matterwhere they are — in person or at their convenience.</p>
+                <p class="footer2">Welcome to Medical Solution, where your health is our priority. Founded in 2019 .Our mission is to offer personalized care, with a focus on innovation and improving patient outcomes.</p>
+            </div>
+            <div class="footer-section-contact">
+                <h class="footer1">Contact Us<hr/></h>
+                <p class="footer2">LOVELY PROFFESSIONAL UNIVERSITY,Jalandhar,Punjab </p>
+                <p class="footer2">Phone:+91-9865xxxxxx</p>
+                <p class="footer2">Email:info@medicalhospital.com</p>
+                <p class="footer2">Web:www.medicalhosp.com </p>
+            </div>
+            <div class="footer-section-service">
+                <h class="footer1">Our Services<hr/></h>
+                <p class="footer2">Book Appointment</p>
+                <p class="footer2">Blood Bank</p>
+                <p class="footer2">Staff information</p>
+                <p class="footer2"> Pathology</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy;codinghospital.com | Designed by Vivek Ash
+        </div>
+    </div>
+
+</body>
+</html>
